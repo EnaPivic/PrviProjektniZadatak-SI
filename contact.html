@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Portofolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"  >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+ 
+
+    <body>
+
+        
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <br>
+          <h1>Contact me</h1>
+
+          <br>
+          <br>
+
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lastname">Last name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                   <input type="email" id="email" name="email" required name="email" placeholder="Your email..">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="birthdate">Birthdate</label>
+                </div>
+                <div class="col-75">
+                   <input type="date" name="date"><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="gender">Gender</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" name="gender" value="male">Male<br>
+                    <input type="radio" name="gender" value="female">Female<br>
+                    <input type="radio" name="gender" value="other">Other<br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="checkbox">Checkbox</label>
+                </div>
+                <div class="col-75">
+                  <input type="checkbox" name="checkbox1">checkbox1<br>
+                  <input type="checkbox" name="checkbox2">checkbox1<br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="select">Rating</label>
+                </div>
+                <div class="col-75">
+                    <select name="grade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                     
+                    </select>
+                </div>
+              </div>
+
+             
+              <div class="row">
+                <div class="col-25">
+                  <label for="message">Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="message" name="message" placeholder="Write message" style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset">
+              </div>
+            </form>
+
+          </div>
+        
+           
+      
+
+
+
+          
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script> 
+           </body>
+</html>
+
